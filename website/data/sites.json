@@ -1,0 +1,567 @@
+[
+  {
+    "category": "常用AI",
+    "sites": [
+      {
+        "name": "Gemini",
+        "url": "https://gemini.google.com/app/",
+        "desc": "Gemini是一个Google创建的多模态大型语言模型",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAACbElEQVR4AWJwL/ChKyZL0y9XpzJAr/UAG0sYhWE4xrVt27Zt27Zt1ba7Rm27vbZt226/9sxmNtN1MZvkTSZ8cs7op8wG/ho58iVlFvDzuKn1f44ciQ8TZoCu+QZpOsGXsRPxasYCXFu4R8gr+MG+WyUWu71wKzLXOGCFxKMSb+DXCRNPcjHldgWc9p88yQv4efnw1ZqY495M7Dp2G5Mtvq8uVfDLnPG99GFLLF9hivUXDLL536tUwM8rR/Z6vWYGbu1cg8x9FirsUEYhbLjVH8ok1OgaXx4epsbkx4RwsEjTwvpZ5LIZXa/ep/GzdYdThF23n4YUp20QeVnDxikW2x2u6MS6W6rqcgLoegInO1ugklHwW0KD+r/E9YTvA1uCui4YiDTlBAaz8BdihV8WFrjdU2OakGadT0BQUH0t8G9SlR1/46u9/BpTH2wPktsymF/MAlgEH8JyhQqc6HUf/Zw+oZftT4OYBvyyoC1q8Hd6tR0/s2q//JTTEBRhF892R9jpUQy4Lnk3A44U5KCf7w30c3lDoHFMJ6ix0ucX2wgIY0GHs/MYcGq0E4ZJoxi0j/tT7pSGICG7UqMPTcb1wSdZcFPOBsxKPIYxoQL0FWQanbKz8YdGd15XZ672uzoDh88t505JqOaULFy814JbwM2ZvTSnJJSm1ERL/OJzUe6UA5UympKLlt6njbtedsr+YR7oLA1XowN9nq3m5fe05OSqkyNTN6Nd9FG0DfZj0O6irJO8/Q/pZ8uCLMrrD5hqHb9b2CBhIwPSNe9nmqapS+oTSNWI2Vufd5CqnLDiJWW2c2nZxCU7KP7BUigf+OW0iDHe5JwAAAAASUVORK5CYII=",
+        "private": false
+      },
+      {
+        "name": "Notebook LLM",
+        "url": "https://notebooklm.google/",
+        "desc": "由Google开发的基于大语言模型的笔记本",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAaVBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///9jY2P5+fnW1tZZWVny8vJQUFC+vr6np6dxcXGBgYE4ODiMjIy3t7fGxsbo6OgTExMoKCi/T8vOAAAAEHRSTlMApeC+lRtnVDRECyl9+IPuvtK9QwAAAQxJREFUKJF9ku2igiAMhv1Gj1kM0PxM6/4v8owNE816fw0eYO/GgmBTLrJMpMGJRCydwvKA8pv0FP/5LJEHFRuLj0xKsbLwk0mZMyvW9bOfBvWmDN2iNkB6rKYtyzjuALr69epngJp3rOWIoge07sbYOHoNgpSCHq/Ny2Imu9BAexF2hoJGY0ZjNOi7lHfonKULmUEjgw2UBqRGE0y5OehmVAOl0ggmGLnUhO0stgqNWMGEDhRDerbFhGocyKc2eEDxs4LhzL4aTNis0JXSwpPggHbeMHJNaLkyLKLf4GVr36fox6tzluy/bKfq25BYlT9GwRui65Hlu9GMfBQeh7pYR7BKToe+FJkofPIPgecmYav2MX4AAAAASUVORK5CYII=",
+        "private": false
+      },
+      {
+        "name": "ChatGPT",
+        "url": "https://chat.openai.com/",
+        "desc": "由OpenAI创建的大语言模型",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAUVBMVEVHcEz////////////////////////////////////////////d3d3Dw8PR0dHo6OgiIiIBAQFFRUXz8/O1tbVubm5aWlqgoKA5OTl8fHyLi4s1UCuLAAAADHRSTlMAM4fC7P+GYGEX4D7Ojz1PAAABKElEQVR4AY2TBZLEMBDEQloMtdn7/4depnzMKgjIONC90g/jBNN46rvPnCdemS4f1PXGB27XN3fnC/fPbl7WL/aKwbbLSes2ewzayrfmFICog2Sam7kLBinDXLSAj8I4H3LCCIKqDKuH9ACYjrtj7LtYBT5JmVkYfXcCcJFDFh6qtnZocuhGYBPeZiol23RRk6NtSUhNrrCqzOBq2xSTDpMF7L8qXh7ApL1TFR1AmdGGCwDtJtXB5tqyK/KkgC07YkgBFjtQk9qwAw1NLtpniwLlkMQEcGpBQDNZih5s5r7TgtA2fSTwM2RVUMCYrEAwbBaLygY5YXB5S1nUQQSCPMbtLdm2ql+lon3D4PqlhOZl/lpEX7j/qzSNy/uiPnef6U+tHYa3dngChykXpLJcwZkAAAAASUVORK5CYII=",
+        "private": false
+      },
+      {
+        "name": "Claude",
+        "url": "https://claude.ai/",
+        "desc": "由Anthropic创建的大语言模型",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAJFBMVEVHcEzZd1fZd1fZd1fZd1fad1jZd1fZd1fZd1fZd1fZd1fZd1deZDooAAAADHRSTlMA//F3mhLfyjpWsiMDGU5mAAABH0lEQVQokXVSWXbEIAzDuw33v28FJCnpTP3BA6+yRGvbLK39a0F9RUvHZ5CIazZwkm+VpCi1nZP1GpJEnq2NdabzU594N0XpzInRhq/7jvm8wsOjFfVmcQG4guTWZKYL8HSiA1XFHDjgHMqCpKfpNPgIXiZVVvSJ9yazOJARxBiYf/ZMoIUxrYGjRHs/di2nbdzDZxIb1maPriold3QlyFJCAonMd08A7/WhkN19PWDolSeiXU7URWPm8S3ewMCuvGpB+kigVXvWZKlgIVycF0Hjl6DIoVRCGKz9pE8W0QKXkgkIEmjzUDuh11TSuVkn348DLHs1Y7/kzTi+ksX8GLn0wBRrdvCQS949C43fstj6FhfM8Unfqqwv3gf3+/kDMJgHC0kwnjEAAAAASUVORK5CYII=",
+        "private": false
+      },
+      {
+        "name": "Grok",
+        "url": "https://www.grok.com/",
+        "desc": "由XAI创建的大语言模型",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAMAAAB61OwbAAAAOVBMVEVHcEwMDAwLCwsKCgoNDQ0KCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgrJP0A2AAAAE3RSTlMAGCeZDKc2s3dovtdKzfj/61iMv5CHvAAAARNJREFUeAGEkgWCxCAMRYtr8gP3P+zSziyymmp4P4Jcf5v6h2tj/+bOf0upvbaTh/iFJpNzycHUp7Qnd7aQiPEyyWnEk7Qd28xY5qwq47VzAYBiUkuOurp9PjooN14ptQBHhQgg6On6glOgC0AbJ3wRRAbqzksAOC3BcGnnzlsAfa0QAXEr18cCZSCoOUarghJ5fjuQ9d7029Ec7LUJVob2ln52ZvYSNgPu4WbORQAzPksuQ67bjPE4lro+eqXX7mSg+CWwBeC08N0i9+sUkJqucjz9uXnZjkpJ304XAHwcR8NmYMIN8JgcvJXRsM4CzDOnd+5dfOkcCTMLuWYP3uv8bSmlekTfPfmP4c09LMxMlOVPAJmvDusdHdJvAAAAAElFTkSuQmCC",
+        "private": false
+      },
+      {
+        "name": "Canva",
+        "url": "https://www.canva.com/",
+        "desc": "简单易用的在线平面设计工具",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAZlBMVEUBw8wIvs4It84QrdEbodQildcujdc6fdqs2+z////v9fyI1eLW5PdnxN0CndJEcNxPYeBbUuMtgN8eiN1lQuc1cuQ3Yud4hOlwN+eUmPJBUe2wt/R8KuhEMu53KO1VO/VhKftvJvOu9q1IAAABHklEQVR4AW3OBXbEMBAD0OA2cpiZ7n/JamLPFrWY/EjP3u/4vh8EYRhGUfz6HwOa4l9jM/6DjEUp/kEtCn78kASMSbVI9JVSIMv9HEgVf1gacDSFKawRGT4hjUQs4J+CR6WVRArfgHksTJARX4pMIKP2nEDurPR4x+fLACQmyvLCWSUo4aoIU8RqinKcQigmqdVe+CQVdNQ0zhwWgtxrX+1D1jovkhQy27ZtQ+p7NaIdA4xQ0/f9kI2PTZPHrZgdA7BDKYcZSy1GJEhlBbJhGKphGTGSaNvm6ZahVstSrVh3a8Rews6SATAGmHehg0YcRJh9zgzMWp+047BIkZzLuUvOU2qKAu9c5808Juq9b18Skqri5WKFpqhA4suy4iezACbbphCQMQAAAABJRU5ErkJggg==",
+        "private": false
+      },
+      {
+        "name": "Notion",
+        "url": "https://www.notion.so/",
+        "desc": "集笔记、知识库、任务管理于一体",
+        "logo": "https://www.simpleicons.org/icons/notion.svg",
+        "private": false
+      },
+      {
+        "name": "Figma",
+        "url": "https://www.figma.com/",
+        "desc": "在线协作式UI设计工具",
+        "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0ODAiIGhlaWdodD0iNzIwIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgNDgwIDcyMCIgYXJpYS1sYWJlbD0iSG9tZXBhZ2UiIGNsYXNzPSJjc3MtN3Z6czZhIj48cGF0aCBmaWxsPSIjMjRDQjcxIiBkPSJNMCA2MDBjMC02Ni4yNzQgNTMuNzI2LTEyMCAxMjAtMTIwaDEyMHYxMjBjMCA2Ni4yNzQtNTMuNzI2IDEyMC0xMjAgMTIwUzAgNjY2LjI3NCAwIDYwMCI+PC9wYXRoPjxwYXRoIGZpbGw9IiNGRjcyMzciIGQ9Ik0yNDAgMHYyNDBoMTIwYzY2LjI3NCAwIDEyMC01My43MjYgMTIwLTEyMFM0MjYuMjc0IDAgMzYwIDB6Ij48L3BhdGg+PGNpcmNsZSBjeD0iMzU5IiBjeT0iMzYwIiByPSIxMjAiIGZpbGw9IiMwMEI2RkYiPjwvY2lyY2xlPjxwYXRoIGZpbGw9IiNGRjM3MzciIGQ9Ik0wIDEyMGMwIDY2LjI3NCA1My43MjYgMTIwIDEyMCAxMjBoMTIwVjBIMTIwQzUzLjcyNiAwIDAgNTMuNzI2IDAgMTIwIj48L3BhdGg+PHBhdGggZmlsbD0iIzg3NEZGRiIgZD0iTTAgMzYwYzAgNjYuMjc0IDUzLjcyNiAxMjAgMTIwIDEyMGgxMjBWMjQwSDEyMEM1My43MjYgMjQwIDAgMjkzLjcyNiAwIDM2MCI+PC9wYXRoPjwvc3ZnPg==",
+        "private": false
+      },
+      {
+        "name": "POE",
+        "url": "https://poe.com/",
+        "desc": "一个地方就可以访问多个AI",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAApVBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABERETNzc3U1NQ6Ojrd3d3////5+fmzs7PBwcEuMS3k5OQcChJ9fX2qqqpxc3G6urpKSkpgZ12WLrbUQ+8jW5ETGCZXWVcgOV6ipKHz8/M/AECUKJbGQN3zTfxOeta5PMc7X6tdkfplGFz+Sev3SvMnDSfSObZzb/dmfPcgK1BhVclbSrUQW0aIAAAAC3RSTlMAF3zD7v97B7QzMuyxseYAAAEhSURBVHgBndMFYoNAFEXRQR4uP+7u7tn/0spIy0A9J4JdHJhkmJYNjW05Bsu5Hr7guUzx8Y2ACQG+5Yvt4wd8Lx5+4DFm4EcGcyCFUZyLEigmsyClpIugWMyGRAUVKDZTO0iroa4WhZBEUCeKUdQgauZBi6gtDqPDJ0TcJeqUgx5RLDKqi6A/+C0YloKm+OeLoILRWAUToi6AegcirwOIiOrD0VQF6LRpAl2/MutDBdKY5jrCYjlc6QEapIsX69Wyufk+6Cy32G3240LQgGZ42Gz4SYDZHwGWR+6UWa+Hzb26WRakaLI4LnF+l+1A3W4TSvN4wZW7SXdwTv7IHbLlD5QZ+kP7uKLMKzz2zzHKXPVivfpq+b++vDnDKb/+psGENzGfKlzpHUYoAAAAAElFTkSuQmCC",
+        "private": false
+      },
+      {
+        "name": "AnyRouter",
+        "url": "https://anyrouter.top/",
+        "desc": "AI的API代理网站",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAACdklEQVR4Ae2WA4wlQRRF17ZtK17btm3btm3btm3bttU2av/dmUpqPfyrSXIahZy6rxmqVOfyXiVE+B8J43MfU8ZSuN6xFW5eFJ0rgja98dYUIEiFcQQ1bGyRH5nwI2/FFbhTsUUuB9rNBpvW6g03qL5c0BtuqxxoYcZ7YrIkb7hrkCV7wx1DStrnkbzUG24iLEaTvQudJjujB0iIZGmfCFcz3eNJusf860x3hfJsPxLpjbaoX0uRPEDCbLfFEZCB7LeEdRU3idG+HmM22dtEb7zzidF4F2FBu7+EKGWes+K7XOdFC+Q+K3Zl+79OajbZ99hodsgBEOIcpfWzEAKIih2WCMRflzO8+C4aoOdmq0tdITNbnCRUjJR+FpY4IK2CDJTfKb32UJrtxwLoo0EfD7PV+aMQUnAD+VlYa518utI2iVTe6iOsukWqgXZcR8jznxTPFjsknsUxvbZW29sDzVbnXAoW4Gdh7bXy4bqrZZfSYKU8ihViQeALYbvHlc02N157IMBfwiZLpIXNFsmE0nKBcqTtXCkx7e83Qi0P2DlO5/fFWKHV/vEaPwu7TlIbdZiu2Cxdpig9aP+splo0QM9pQrvj87dW+0fEg4Ebyc9ClKn/CO1xr7EKoeD861QsEEAEIcRyMym5n4U05ZDBGmGBdEwvvfnXY62OQniU0O78hnymCz8yQO/Ssb20FVM66YRlTitd3VDVqvi9cvrKrmEBARLiOi1pZCxcXdsgYH01H3aVNu/SMSid3U094XRTLchwHujvIRJBciyfpYITeazNaHe6WTkY2UiaLNBCNs21rFYG+hjYPd15bg+3N9pD/mlChMHGJ0K5hIle5fMzAAAAAElFTkSuQmCC",
+        "private": false
+      },
+      {
+        "name": "perplexity",
+        "url": "https://www.perplexity.ai/",
+        "desc": "Perplexity 是一款免费的 AI 驱动型答案引擎，可为任何问题提供准确、可信和实时的答案。\n",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAASFBMVEUAAAAAAAAAAAAAAAAAAAAODg4lJSUxMTF5eXeLi4o5OTnz8/C1tbP///7k5OGwsK5oaGfAwL7OzsydnZxbW1pFRUTY2NZLS0pmsWyyAAAABXRSTlMzx//IxgDMHHYAAAEOSURBVHgBddLhEoMgCADgxhaGmCiqvf+bblrdpnfjD3mfpFDL8oA/8ZxtiNdy5vVMiMPyQrP1RNTTZga0TG23c62M2I64e0EAEQAUv0/IIaptaGMMPOMKSbNI1gTrL66ImQsiVe8rIRbOiOuFNrnITuRz2O4/yXF0yVx4VEctUsPUH109btTcJyBO1UnvMesXQ3t5dFbEur4zjFhUTGvFOB9mDD7BOQRInAbMKxPcCLTjcObBCPdsAfn4VpaqsWP2PneMWsuFuFFqGJRZQ8NEG/7OFmGrFCPVDXAavGEkT+1CnzSj5ejDedvg41y513y3kuv8sfX4tnLoiFh+f7CCA15hzLBcXvA3Hsvy/G9viXYUStfpMwoAAAAASUVORK5CYII=",
+        "private": false
+      },
+      {
+        "name": "stitch",
+        "url": "https://stitch.withgoogle.com/",
+        "desc": "AI驱动UI界面设计",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADjElEQVR4AWL49/8fHJ/6+4gb0Hs1hkcORdGX1F7btv1nbdu2bdu27XLt3bprj1FjnE7dzrzNTTe1MsWP8+XmnnfvOXGu/l3EUPxEdQU7U6H4YbSuSOBMybCH1sP4Sj32vUFql1EzLZCIQ2piN+o1XYCLE6AhEQfXzGRAIYyqgV0pX1hQEgAt0GQMGAwGO+ym9QSiJAGaoI3wa80IjsVG7lzOoLWHI+yueVrQgv27j/o06NQ6rPeU0bzOfXuKqzatrwJA3GfKGF6DTi3DDu894V3QfrT2YwR3aEEL/K57fihduYIemSOMylrhLj27iwEQQw44WFNgA86UHNGBnstpS3IJ/4EQwu9c0oUghhxwHC+nHgxQXIpiXUI+ESSBQ+7zfNkcxIQZwXAcDVBgQMelKMiV741sLbDw6hcfNgcxYW1OczxvjgZ0nA0oXaR+iCTxryv+XmzuNx3DJQCu2A24nH7IXG/1PUkAm1PdE/tD7v6Jux+K14CzSgRClZvWU2ep09do01ABHHZR8orNQJ+Bg/+CSLRL0JesnOFhxE/guvTrJSoWA35XPzCnftWq9QG5rdmxZa8vrPl01etD0RpwVgmZU9+sjja/x3bU5Em/LG1tEuFyFZmBzoN7S8CA8r4kIL+1l6/fZZ6I3pNH8ovEgOeF1++h4ebte/MSTw59wPftO2vcX1TTCSNLEkPN5ytwKUw0wJ56aFa/ZbMw/JBS5LxOwe8zdawIOVgwosiMBkkwMeloSffQSEw2MHjsmN/Q6PH5R5458LHHD5zxJirZpQsjFun7YyZP+WGSAf9rqR8YRDKPlhS7KX+zXNRtoX+PscNE6WIEbLOBvRT82189ORpQ8MxL2yWxBphtbSc8f8myTz0mDhMgq9TGyCIXYRZEKu9YrVwMfTnFBTYweua0n0wD8/8CZCYhEGZz+YI9OzNXLf+amwEqK9F6cDc5FBUl2g3tKc3tc6zPSvSeMILPFFqTGFkS6bCALUfYpp6B1oO6y3P+IXGmshEJzmFf7SuUjUcVrDEqZ0XD2iRALfSwK+eUoHwg8cvhl0yGsLv2cc7vAMXfv1cCPCU3vnubjOvfvXlXP3vSvXi5/JQ+RfiVbjibKHG80o5A8cZkO+xGlfhgApqgzYxmBlFsiY9moJlpOE0WR5fYcJos1mceTln8NkbaGV+qx8AoDXdoEY7ncrqnGz2ej/5tjMg0nv8DnlZIGGF1wdAAAAAASUVORK5CYII=",
+        "private": false
+      },
+      {
+        "name": "Groq",
+        "url": "https://groq.com/",
+        "desc": "专为推理而设计，而非为推理而改造。",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAAKlBMVEVHcEz1UDb1UDb1UDb1UDb1UDb1UDX1UDb1TzX1TzX1UDb1UDb1UDb1UDY6aTRhAAAADnRSTlMARaDl/9MrXQkYs2d0he1M0YoAAACzSURBVHgBTZEhCMJQEIbPKei0yToz2AwiY1nxMyhaxGIT7bBgZz1ZFux27EYNduy99yDvvZ+xr/x8HHe8u2eeYbYaWc0FIDfRxVNIE9iPYRGsB0ezCkqvERsXD1KvHeYu2iEs4elioOYPNxcxW68/zMNO1VKq3kKqydOm9pWKGFKpZjF5fWuNANa12hWpeCMV8f2kR2pprSC0oEpaX4VcxwnFjJlO52ihw4oKnV2cD8vwKX8oIy2+ImIR5AAAAABJRU5ErkJggg==",
+        "private": false
+      }
+    ]
+  },
+  {
+    "category": "设计灵感",
+    "sites": [
+      {
+        "name": "Dribbble",
+        "url": "https://dribbble.com/",
+        "desc": "设计师作品分享平台",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAUVBMVEX/q+fYe72zSJS3T5m4UJq1TJfkisr/r+v/sezafsD6peHBXaSyR5T/rOjTdbj/renGY6nnjs3fhMTwmdf0ntv/ruq/WqLPcLTslNO8VZ7La69lEsuzAAABPklEQVR4AWWRB5aFMAhFI4Ehk2rU6Nf9L3TANt/js+Klay51YBGRfvi03S/hDdkHEBo7p1biDHhDtbsoFDqJLakXdkMVV6VxYDciIVprHnQEja1Z61uazENtp0R6m30xraS7amE3KJCwuOj37uPZOWbHbap5PRl+WN0JgObQ92EFebO4i3wzqt1xFx5BWpEy7/ByPgDEvv4KjT4pXGZNp2ekkKtxrUlJ6lghu+LHj2jyze2tN+2YGrdjhFRE6R6pKNx6BPNScr7XBcn1QjxucPT4gm7qIx2E4Jm2FF35kZIWX54/ZSVFsG4WaeNHyiFaRXN1I6GdvyEvoJWwckleXql8sU0ZLElnb/IeTfpnpCmrOyz18xfkDNrk1E5ztQjTCXlQhtr8C5ZJmb3ZI20TR/E82bOh1hEiVb7ZMUozf5iDED8WsD32AAAAAElFTkSuQmCC",
+        "private": false
+      },
+      {
+        "name": "Behance",
+        "url": "https://www.behance.net/",
+        "desc": "Adobe旗下的创意作品集",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAeFBMVEUFWP8AVv8ATP8ASv8AUf+lt/+ywf9lhf8ARv8AU/8AQP/y9f////91kv/q8P8ARP/S2v9ujf/l7P8ASP8yZv8ATv+5xv9nh//M1f+Spv/BzP/Y3/+4xP+ZrP+su/8AJv8AN/8APf/f5v8AL/8oX/88af9Qd/+Kof8IPKxZAAAAvUlEQVR4Ac3RRQKDMAAAwZLgLO5ab///w7qgZxZnLpHNcspsa0UhHwl1CqWmP9IM8/5hPfpD2+GVLlX38fT8P/QIQteNIFYUVUnSB/1h5qdmDqq6KYDS76Mt0oratqBuoBX/yCMnjjuq7S6BHkZZljkQR9RVlYGh/mG2l7ENbYQXRdEhynvoq+rRoykoj/bxdB5OJdShzME4lSDHi1Cbfseji/pF2WWPOuM+vfjcdldVnVl4KxXp8patFhe6ATwRD2y5uYPGAAAAAElFTkSuQmCC",
+        "private": false
+      },
+      {
+        "name": "Unsplash",
+        "url": "https://unsplash.com/",
+        "desc": "高质量的免费图片素材库",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAAbklEQVR4AWP4jwcMsOQdWRMgkL2DVfIGAxjcoLLkVYjkVeyu/QYGpHnl2R0gePYfmY2QTAJZFgWRjAKxk5Akc0ECaRDJNBA7lyTJTIhkJlZJr73bgWCvF6YkEqCeZBq6ZBqS5PYZaGD7AKY+PAAAvcZsGaVWSBYAAAAASUVORK5CYII=",
+        "private": false
+      },
+      {
+        "name": "Pexels",
+        "url": "https://www.pexels.com/",
+        "desc": "免费的图片和视频素材库",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAANlBMVEVHcEwZGRkZGRkZGRkZGRkXFxcPDw8AAABVVVXPz8/////j4+N4eHigoKBBQUG4uLiVlZXy8vI6eK4DAAAABXRSTlMAatn/xWyC1CQAAACxSURBVHgBrdNFAsJAEETRGq2JJ/e/LKPxZpWP9wPiAJQ2L2mFmDVCFlBGTOH6n857Z1oaZ/JkCIY0tTMydH1sGOkeyKmvdVXxYkmv6Oc8HcclvY68INNwZSyk5d5wa6P8NeNO6BgnU8Exvg3+D84Spq2lS8hWxtS6bwumVhql16FvizTo35poJEwm4LbM1a4rtDLnTUNXqpsS3zR5385PUMuooWRUgJXQIqZ0w5XXy+EHUvoRJb4sHKIAAAAASUVORK5CYII=",
+        "private": false
+      },
+      {
+        "name": "Awwwards",
+        "url": "https://www.awwwards.com/",
+        "desc": "全球优秀网站设计评选平台",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAApklEQVR4Ae3BERDDMACG0Y9msUIwd6XSII5zHdc9VBiNyuNitVQclkOlWikUDP272zbe/PYef99VR3CGgwdrwR8wNRwrAKwcZaTPECNnwVgwanjKAW0sY0spDLFlEyHzMk/hLnSOft/9et3QPUwzL2Gfu7WTVT9OvWp18TLvgTfl6pZWSmrbVFjTzWXxkQonDSwCLQw6ocSHq8EbbAONxXioHX8/eABsqk4hgXnA3AAAAABJRU5ErkJggg==",
+        "private": false
+      },
+      {
+        "name": "Prompt提示词工具",
+        "url": "https://promptpilot.volcengine.com/home",
+        "desc": "优化提示词",
+        "logo": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_sth/ljhwZthlaukjlkulzlp/autope/logo/prompt-pilot.png",
+        "private": false
+      },
+      {
+        "name": "gentube ai",
+        "url": "https://www.gentube.app/",
+        "desc": "免费无限的绘图工具",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAllBMVEVHcEyIeJ0CAgIMDRGdirgBAQFSSWB4Z41WTWYMDguAbpZwY4AODg8ZFxwAAAC9pmZlXWozLi90ZkAAAADfxHR6bJBLQibKsWbKsWbJsWZwZDpsXziVzJ6Xz6CqlciDt4qLeKWBfpN7rYCdirOOxJaTgqh8kImah1JpjnB5dYmij7+KvpJ2p3xXd1x7jIiZh3yHd3esl1oLpCD7AAAAHHRSTlMA/ScH6k1P/U52/P0TOIX9+0r0Q/nNxb29tIuI8cof7gAAAOFJREFUKJGdkucOgjAURmkZRboAcWtFa2W43//lTLRAVWqM58dNbk96O/I5zm+4blc/IJTo0gf0CfGhbTBkzOqceZYt3teGgycsLYqU6Wb4dEkkegDJQwZASLAxULVQIAq0VOVxbVBWskjjUMvqsHqhBK0M0X63NFmtI6X02B6Jqg2yy1tmH4sw1juDHnm9YPvOgjdP+X7b85vcRnnenPnxCSeJEW5+SMbltuN4ArUhhZC5gRB1rvRYOvI8KaXX8mhGtMkO43zst4w5Z0aW6GSSdMlIpjNqBIVAaMTVfen+4g4XxSmEn5yHVgAAAABJRU5ErkJggg==",
+        "private": false
+      },
+      {
+        "name": "pinterest",
+        "url": "https://www.pinterest.com/",
+        "desc": "发现食谱、家居创意、时尚灵感和其他",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAM1BMVEVHcEzmACPmACLmACPmACPmACPmACPmACPmACPmACPmACPmACPmACPmACPmACPmACPmACMDEHyKAAAAEXRSTlMADQV52f/IqIf3aFsqSuK8lqlIRVYAAAC5SURBVHgBvZJFEsQwDATHzPD/165U2nB8zYTVwtj4QkotgDbWkazRT2bcLnNn3p3k31iIMSSh95xZ3ssts+bvSvYYG6D4S18CM6pjdY12CaUZEoeHQeYBUF27Q0d2Co9Ap1eFSXchUmQicFXLxRHZ5QSDQHeHYkJzWcaQqc8NUWhq4JAIzmTv/1VDdSqOcRlFy4RQGqQpjtfQSSVzy/2xMNxCQVgvS0V6sD1zbavFBpQe/22y3mAf6Ae59wbdKckEPwAAAABJRU5ErkJggg==",
+        "private": false
+      },
+      {
+        "name": "midjourney",
+        "url": "https://www.midjourney.com/",
+        "desc": "AI艺术设计",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAY1BMVEX////AwMB6eHn39/dlY2OJiIi3trewr6/s7OzMy8uQj4/e3t77+/vw8PBHREWAfn5VUlONjI1oZmepqKhta2utrKx3dXaYl5i+vr7Y19eGhYUPBgmenZ3j4+POzs5NS0s3NDWiicnfAAAAuUlEQVR4AdWQUwLEMBRFb+za3v8qx2z7OzhxTvjwPQhl2IcLuS+VNhTWbUtvEbiP6LaNT2cj4WFLpqcqQ0z1hsxPk1oYU2zI8iRRugrVWtYeJyrXELL1oBPSUawO9iku2DK0zZvMW9UdsW0cKpO9Ot0PI05MAqMbXuXIvG4novK67oSos/nJZbYeSjK1Y8AJYl/CXkxAGxtgopOjtpvuiokcsktzqE6UUIuVyDt2s+G04lGd5oPHv3EAAVkIwKf1rt4AAAAASUVORK5CYII=",
+        "private": false
+      },
+      {
+        "name": "leonardo",
+        "url": "https://leonardo.ai/",
+        "desc": "通过一个简单的提示，提供了一系列视觉可能性",
+        "logo": "data:image/png;base64,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",
+        "private": false
+      }
+    ]
+  },
+  {
+    "category": "技术开发",
+    "sites": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/",
+        "desc": "代码托管与开源社区",
+        "logo": "https://www.simpleicons.org/icons/github.svg",
+        "private": false
+      },
+      {
+        "name": "Stack Overflow",
+        "url": "https://stackoverflow.com/",
+        "desc": "面向程序员的问答社区",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAA7ElEQVR4AWJwLwC0WwcaCENhFMefoV6hABgEBhDAxN7jAggRPcSeoAcYQFgIInuSIcAlwLqHM45klvtt0PCXO7Pfvu3Gskn7c3AG/WldhNIpwRaNDQJadb9EH9agYiWQ13G55doRPYwFLkKNIpiQ68QcZIqUXHuszUBMo1PJLm2JJ/qoo0FcSKZCBdGc62asd5h8wkRTKxCIkwsvZPMU+h7tQP4VNB5zehNR4LWq6tD+y+N0xHyH8/wzigFbXEA2TColiMed3ODTBMQUPXlzEJP0ZQnWl9t9MyQr8KdiwTy0C2WD4rnzN80MmvcG9xb1UQNO3ZEAAAAASUVORK5CYII=",
+        "private": false
+      },
+      {
+        "name": "MDN",
+        "url": "https://developer.mozilla.org/",
+        "desc": "权威的Web技术文档",
+        "logo": "https://www.simpleicons.org/icons/mdnwebdocs.svg",
+        "private": false
+      },
+      {
+        "name": "GitLab",
+        "url": "https://gitlab.com/",
+        "desc": "一体化的DevOps平台",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAYFBMVEUAAADiQyriQyjfQCjiQyjiQij/gADiQin4Uw3jQSneQCbkRyriQyjqUCb7bCbuVifzXibyWyjyXCbzWif5mSb2dSfvUCD1YSb8oib2hCbuZiL0hybxfCbweSfwcSPweSjmCvDDAAAAIHRSTlMAMf4giXACyQtJFRW0cP7/tyySR/z/ENb//w/WjkcSaXdrqYkAAADmSURBVHgBfdAFDsNAEANAxw0zluH/v+wql4NsYQRHjlcKVlGEHX0XkQcoB9InYjKBkpAxNinJDEpGModRUJTYqSgKGDVFoieIOgjrGRkFKxe2B6vkKgnCTPQEWxvRqBGoaUTmJxix5+/stJ8qNPyrQdu2HX/o5FECYUQ924BNqHcbMKjYextQJV1roVcJ9d5jaD1dLwZgbL3Ofm6NEH2Y2L/3EGGHMmIztc48L601wTmezNVyFhezP+Vw7JjLeTWbemWQ+vNmXsJ663o7O7crvrlvFfMdPzzWxPzAT8+b1D/xz+uFvTeXVhe3WIiAaQAAAABJRU5ErkJggg==",
+        "private": false
+      },
+      {
+        "name": "Vercel",
+        "url": "https://vercel.com/",
+        "desc": "前端开发与部署平台",
+        "logo": "https://www.simpleicons.org/icons/vercel.svg",
+        "private": false
+      },
+      {
+        "name": "Netlify",
+        "url": "https://www.netlify.com/",
+        "desc": "现代化的Web开发部署平台",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAALVBMVEX////f9PQAt7QAu7iM2dj7/v43xMKe3934/f3a8vLGz8+Mn54hwL0ANDI9xcM3IX9gAAAAUUlEQVR4AWOgHDAKoHCZFFC4zAa4uSwBKFynVBS9YeocDUhc1ko0e1fvgrF4jI2NGvbe5lA2Nj6AxkUoRjMKt0VOT5kU0B1J2EcI76MHDsUAANZSEj24Z6GKAAAAAElFTkSuQmCC",
+        "private": false
+      },
+      {
+        "name": "Cloudflare",
+        "url": "https://www.cloudflare.com/",
+        "desc": "最大的免费托管平台",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAATlBMVEVHcEz5rk34nET5nET3lDf1hSf0gB/0gB31hCf2iS70hCj3iTH5s2Hxiyz6rkb7slD6sU36rEH0fx32jz31kD/3kD30hCn7s076s1H7skd58tzvAAAAGnRSTlMAGlsqQ9T//+xrjb4NFenZff/+5unXqJevNXrcovAAAACLSURBVHgB3czFAYBQDAPQfktw1/0HxR0m4B3bJPJXSmsj36wDCc+XDwGICRnKi8aOwe0R+X6Ei1hOBiRO96oj7vwkzfYn7gibT4xMfAeAp+mn81k0bxYAvbKqyrquwzBspkqbpnneSkDMvGYRTLSIytouyRPxiB2LAkBR2D5fCd5svj/jN1GrSP5jBDuBCe5alxRHAAAAAElFTkSuQmCC",
+        "private": false
+      },
+      {
+        "name": "Fmhy",
+        "url": "https://fmhy.net/",
+        "desc": " 互联网上最大的免费物品集合站点",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAMAAABY1h8eAAAAqFBMVEVHcExtVqvKM8vKM8vHNMnDNscLeYMdeITGKsjINMnGNMkFeoEac4d1OKfryOzFH8bIM8kSdoUYdIcxT5D////08PfXf9jCAMMPd4QUdIYnWY3z3vTNVc/EDMXIKMgjXI3rxuzGLMjhpuPGIcf8+Pzcmt6mkMappMk2RZI1XJIYdYfFwdpMWJswV5Ejb4zb3ehqZ6gfboqHg7cGe4AZY4q+u9YLbYIXdIf0ljGOAAAAOHRSTlMAAgUKEhwHDjlNKB5BV6uAYjmJof/91KlGuOL3y5l1+PC45Iv/l7/vu3os98+STfrbY+UU8/Sfw3SE1HkAAADFSURBVHgBYqAYAOqgqySGoRAKoI27k7q7u+x/Z40zQ3j8nsGuJMuS0BRVU3mWdEMzLdNWZQ4d1/ODIDQ1pd2sR3ECabcXWAzr/cEQAEbjydSys9UUZ5DXfDEJCSMCLHsrXE0R1tlqZIL56l6xmsV89RR7KQJsTE0WYLr1cCnB3f5w1Nlr4XS+XJ3MGLzdk8fRYENIn9nEnNq4zpZFL70d/BvgUyyTOgzezsmDoQzd7++LdxA8Ph7Ri6OsJMN56WhUJRGJ6w+Ylhpez6Lx0QAAAABJRU5ErkJggg==",
+        "private": false
+      },
+      {
+        "name": "rsshub",
+        "url": "https://docs.rsshub.app/",
+        "desc": "世界上最大的 RSS 网络\n\n",
+        "logo": "https://docs.rsshub.app/logo.png",
+        "private": false
+      },
+      {
+        "name": "小萝卜API",
+        "url": "https://api.lbbb.cc/",
+        "desc": "小萝卜API，我们致力于为用户提供稳定、快速的免费API数据接口服务。\n共收录了156个接口",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAALVBMVEVHcEwChMcChMcChMcChMcChMcChMcChMcChMcChMcChMcChMcChMcChMcChMfUU1gUAAAADnRSTlMAIabEENs3+u5mUY6Al0uP6ywAAACuSURBVCiRjZLbDsQgCEQFFW/t/P/nbrU2W2zZ7DyZnDADiHN/K0iwIWMzWQW8aeqBSFZhBpLl23AoV6udQcsr3AdEetJwZr5S4TJDu5bcCE8u8IR6oA0dful+D8wnHHtYS0ua0Ake83S3E9LsuH1hN4vSX3WGsobgo5T8E44mk2/tYnfbLUHr3hCtUG1hX6D+1azYciwSLdNB+cpNLG4VFe7Vkevr7QYSEfpx1kofchYNEKC1gGEAAAAASUVORK5CYII=",
+        "private": false
+      },
+      {
+        "name": "RSS 阅读器",
+        "url": "https://app.folo.is/",
+        "desc": "RSS 阅读器",
+        "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgY2xhc3M9ImhpZGRlbiI+PHRpdGxlPkZvbG88L3RpdGxlPjxwYXRoIGZpbGw9IiNmZjVjMDAiIGQ9Ik01LjM4MiAwaDEzLjIzNkE1LjM3IDUuMzcgMCAwIDEgMjQgNS4zODN2MTMuMjM1QTUuMzcgNS4zNyAwIDAgMSAxOC42MTggMjRINS4zODJBNS4zNyA1LjM3IDAgMCAxIDAgMTguNjE4VjUuMzgzQTUuMzcgNS4zNyAwIDAgMSA1LjM4Mi4wMDFaIj48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEzLjI2OSAxNy4zMWExLjgxMyAxLjgxMyAwIDEgMC0zLjYyNi4wMDIgMS44MTMgMS44MTMgMCAwIDAgMy42MjYtLjAwMm0tLjUzNS02LjUyN0g3LjIxM2ExLjgxMyAxLjgxMyAwIDEgMCAwIDMuNjI0aDUuNTIxYTEuODEzIDEuODEzIDAgMSAwIDAtMy42MjRtNC40MTctNC43MTJIOC44N2ExLjgxMyAxLjgxMyAwIDEgMCAwIDMuNjI1aDguMjgzYTEuODEzIDEuODEzIDAgMSAwIDAtMy42MjR6Ij48L3BhdGg+PC9zdmc+",
+        "private": false
+      }
+    ]
+  },
+  {
+    "category": "GitHub",
+    "sites": [
+      {
+        "name": "Open Lovable",
+        "url": "https://github.com/mendableai/open-lovable",
+        "desc": "使用AI技术克隆网站应用",
+        "logo": "https://avatars.githubusercontent.com/u/135057108?s=48&v=4",
+        "private": false
+      },
+      {
+        "name": "Win11Debloat",
+        "url": "https://github.com/Raphire/Win11Debloat",
+        "desc": "更改Win11设置，加速电脑",
+        "logo": "https://avatars.githubusercontent.com/u/9938813?s=48&v=4",
+        "private": false
+      },
+      {
+        "name": "Hello Github",
+        "url": "https://hellogithub.com/zh",
+        "desc": "HelloGitHub 是一个发现和分享有趣、入门级开源项目的平台。 ",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABTUlEQVR4AWTTA6gYUBQG4DPbts0wm2k28nJTXJ5te2G2bTvMW5iyX3bvqx5u9536/nSNKK5KlSoFVZnMJX7xp8gvLjGRqkTeMWjBAd6wgpF0KTKSdfzjIC0IIu18nRN0IMgnGcJHbnCNFkSIKhzgBHUIlXcuxy42U4cTHKBKiCm8oiNph0h05g39CTryhMEhLrKCKFKB8dQhiizjJJWSCSbSMsRPRhFF2nKfLgSNeMIkIlGeciH+0IUospjzVCWYz13qEHnlA9TjBceYyRwesogRzGVOkVlMzbcwgx+c4zTv+UxvtnCes5zhJf/TQ6zMRZYSVOQw6wgqJIJVXAwxhecs4CVtCXrwlr7k76Ijr5gSogp7KWAtUWQ4O6lI2rlu/pCCFtzmAu0JatCcSHTgBNdpQZnPtD/7TJ3owkhW8Jr9tMj/S+GIzc7+6NkZANuhWDi2+1ykAAAAAElFTkSuQmCC",
+        "private": false
+      },
+      {
+        "name": "cloudflare 邮箱",
+        "url": "https://github.com/eoao/cloud-mail",
+        "desc": "使用Vue3开发的响应式邮箱服务，支持邮件发送，无需服务器可部署到Cloudflare平台 🎉",
+        "logo": "https://raw.githubusercontent.com/eoao/cloud-mail/main/doc/demo/logo.png",
+        "private": false
+      },
+      {
+        "name": "langextract",
+        "url": "https://github.com/google/langextract",
+        "desc": "基于大模型的智能文本提取库\n",
+        "logo": "https://raw.githubusercontent.com/google/langextract/main/docs/_static/logo.svg",
+        "private": false
+      },
+      {
+        "name": "Airi数字人",
+        "url": "https://github.com/moeru-ai/airi",
+        "desc": "数字人项目",
+        "logo": "https://airi.moeru.ai/docs/favicon.svg",
+        "private": false
+      }
+    ]
+  },
+  {
+    "category": "学习资源",
+    "sites": [
+      {
+        "name": "Coursera",
+        "url": "https://www.coursera.org/",
+        "desc": "汇集顶尖大学课程的MOOC平台",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAQlBMVEVHcEwAVdEAVdIAVdIAVtIAVtIAVdIAVtIAVdIAUtEAVdEATdA8dNmRrujG1vOpwO1Wht7////j7PpxmOIYYtXy9/2J4tXwAAAAC3RSTlMAKYbE5/9g6df/Rl0oziUAAADTSURBVHgBhVMDEsRAEFwjzuL/X70bxOrCoscQK6TSxlqjlRRnOG9XeHegZLCIyHTYaTf2gubMxRYQD6xkKnb9MAzjZFt8k2Xy13bDTEgZ2YBxEpeRIIxoGmL2F45Zv3gsFQ2OuU9wGdirQsUR5S1E28/DRCEroS0A5Af8iu201EILAx8dKE4tp8ScNQLf05+rJdoT3smLWbszuwuIftvcsZTepzIUSqX2llORaImKUMeeipDQv3wr31PhgXSvLds3u702+31M3geMR3OPIL+H+nUdfk2xFkfkxJS1AAAAAElFTkSuQmCC",
+        "private": false
+      },
+      {
+        "name": "Udemy",
+        "url": "https://www.udemy.com/",
+        "desc": "全球性的在线课程学习市场",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAIAAAD9b0jDAAAA7UlEQVR4AWP4TwMwQIaOGvrl5d+tKZ9XeXx8feM3dQw9PuHrHOH3CzU/ABGQsaf8y8/P/8g39OWV3/PlQMYByQ2Rn3YVfYaYDiRv7/pJpqHX1v+AmAI34tm5XyscPgIFj3Z/JdPQK6u+QzVjind+HfZJ6ujRowUFBRUVFciCU6dOBQquWLGCTEOXLl3KAAbIgv7+/kCRhoYGMg0FOgfT0NDQUCobOmqop6cnxFDykxTEUCADInLv3j2ICDBhkJ/4GWAgLi4OmDzh3C9fvpBv6MuXL2VkZBhQwdWrV6mQTU+fPr0UDIDhMIzqqFFDAUfsdt6zPZyZAAAAAElFTkSuQmCC",
+        "private": false
+      },
+      {
+        "name": "edX",
+        "url": "https://www.edx.org/",
+        "desc": "由哈佛和MIT创建的MOOC平台",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAUVBMVEVHcEwBJSoAHyQCJSsBJCsBJisAJSoBJSoBIygBJSsBIigBJSoAGyEWNDn9/f21vr8ABQ2nsrM0SU1yf4GDj5FGWl3c4eLr7u/M09RWaGyXoqPcFzxGAAAAC3RSTlMAl+DPF/R57Vg0tiz1mU0AAAD0SURBVCiR1VFZrsQgDKOdLnSyEfZy/4O+9ONJqDcYfxiEheMkzv0Yjv2csftJ2xaYQLRes/iZNU2rv/7h3LUDAiEAImGsEdHu8PDqnAfIQzNgGTpKhaS3OTy8WB7MklO9o2rKVcLgTpi5F7Bk3ygJQ9YshKHlUCqXwmYPVnO9a6u16sgIoRdE4d74Rjg3t2ESCgFJsxGj1W7MdwD4PnmijJKUhpRbuj2mxs8Bh3M2giTSUygqYtaY2vPT2rE8NgKkaH0iRCAzrS0JS4Dd8vgZJ8bespVuET/bawcnVVay0Ky4vESbZIz0jNj4eH308+q8+zH8AQZXE+TeUru7AAAAAElFTkSuQmCC",
+        "private": false
+      },
+      {
+        "name": "Khan Academy",
+        "url": "https://www.khanacademy.org/",
+        "desc": "可汗学院",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAUVBMVEX///+06NoZw5zU8upFyqgAu44Uv5bs+vZ21rwAvZL8//6h4tHE7eI4xqL3/fxi0bSd381Uza2Y3Mfl+PMvw5yE2sO9697L7+W/6t7Y8eqO3Mduy6cmAAAA4ElEQVR4AayRhw7CMAxE0+G0173X/38o9RAYBJq4I3aedNKdw38qSdPkB8pyipHy7AsqSkK8C1QWH6iqoyDBsa48a1qS67v4pLZ5oq43xb5petPuO4MDqdzIw6jyNBicoDAROzZMLwieB5GR9g2OLYB2DmGWZvRwCV1WAsu6LkCZdWHxkI1tamVj2x7Gmc8dMWLnbvay0LxroNYNwMNc02hb9Z57aDbCugaz46ElcBz833wIA8l0K57nrT3Bx9f1Qpdrz7L9WoT1nVsZGHNJ41b2GIHIxkwmhBMYZtKkCgAA274NQTWW3M8AAAAASUVORK5CYII=",
+        "private": false
+      },
+      {
+        "name": "freeCodeCamp",
+        "url": "https://www.freecodecamp.org/",
+        "desc": "免费学习编程的社区",
+        "logo": "https://www.simpleicons.org/icons/freecodecamp.svg",
+        "private": false
+      },
+      {
+        "name": "learn with mit",
+        "url": "https://learn.mit.edu/",
+        "desc": "MIT AI 学习\n",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAfklEQVR4Ae2XxRHAMBAD3cL131u4D+UbllEh74w+Ia3DdhGApAiITDIdL6EZZKMmiS9XS6Bkgso3pK8jEr1QYKKjLywAWi4QQBXYl+sFUAWqQBV4gMBb34RmtopQgCdGwOkF9nRCgdadoBEgoHA4+nKNRBRDhuLuTZNT/fR8BqPuumgE0PbmAAAAAElFTkSuQmCC",
+        "private": false
+      }
+    ]
+  },
+  {
+    "category": "个人应用",
+    "sites": [
+      {
+        "name": "AI PDF 阅读器",
+        "url": "https://pdf.chweb.dpdns.org/",
+        "desc": "可以利用AI与PDF智能交互的PDF阅读器",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "几何画板",
+        "url": "https://geo.chweb.dpdns.org",
+        "desc": "这是我个人开发的一个几何画板程序，用自定义脚本语言实现几何绘图。",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "虚拟AI聊天室",
+        "url": "https://chsoft.ggff.net",
+        "desc": "个人开发的一个虚拟AI聊天室，可创建角色在AI聊天室中自动聊天",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "Cloudflare代理",
+        "url": "https://ip.chweb.dpdns.org/",
+        "desc": "搭建在Cloudflare上的VLESS服务，实现科学上网",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "Cloudflare 网页代理",
+        "url": "https://proxy.chweb.dpdns.org",
+        "desc": "实现Cloudflare的前向代理，主要用来加速下载被墙的网站文件",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "深度研究",
+        "url": "https://deepsearch.ggff.net",
+        "desc": "基于大语言模型搭建的深度研究项目，主要用于对于论文的检索研究",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "brave搜索",
+        "url": "https://brave-search-mcp.chzhn2008.workers.dev",
+        "desc": "基于brave搜索创建的MCP服务，主要用于深度搜索",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "gemini api",
+        "url": "https://chgemini.dpdns.org",
+        "desc": "基于Google Gemini的服务，创建的一套兼容OpenAI风格的API，需要按照OpenAI调用格式调用，默认地址为：https://chgemini.dpdns.org/v1/chat/completions",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "libreTV",
+        "url": "https://chntv.dpdns.org",
+        "desc": "LibreTV是一个互联网视频共享项目，基于多数据源的一个免费聚合视频网站",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "zlibrary 电子图书馆",
+        "url": "https://zlibrary.dpdns.org",
+        "desc": "基于创世纪图书馆搭建的镜像网站",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "zlibrary 文献",
+        "url": "https://zarticle.us.kg",
+        "desc": "zlibrary 文献的镜像站点",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "Cloudflare 代理2",
+        "url": "https://proxyip-3112.chzhn2008.workers.dev",
+        "desc": "基于VLESS的Cloudflare代理",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "英语学习API",
+        "url": "https://english_learning.chzhn2008.workers.dev",
+        "desc": "个人开发的一个英语学习API服务，使用ReactNative开发客户端",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "全球ping",
+        "url": "https://ping.chweb.dpdns.org/",
+        "desc": "测试一个网站在全球的访问速度",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "Hub 代理",
+        "url": "https://hub.chweb.dpdns.org/",
+        "desc": "专门用来加速GitHub和DockerHub的代理",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "提示词优化器",
+        "url": "https://prompt.chweb.dpdns.org/",
+        "desc": "针对大语言模型的AI提示词优化工具",
+        "logo": "",
+        "private": false
+      }
+    ]
+  },
+  {
+    "category": "个人游戏",
+    "sites": [
+      {
+        "name": "魔方",
+        "url": "https://tools.chweb.dpdns.org/game/cube/",
+        "desc": "3D魔方游戏",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "扫雷",
+        "url": "https://tools.chweb.dpdns.org/game/minesweeper/",
+        "desc": "扫雷",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "数织",
+        "url": "https://tools.chweb.dpdns.org/game/minesweeper2/",
+        "desc": "数织游戏",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "拼图",
+        "url": "https://tools.chweb.dpdns.org/game/puzzle/",
+        "desc": "美女拼图游戏",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "数独",
+        "url": "https://tools.chweb.dpdns.org/game/sudoku/",
+        "desc": "数独游戏",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "俄罗斯方块",
+        "url": "https://tools.chweb.dpdns.org/game/tetris/",
+        "desc": "俄罗斯方块游戏",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "炸弹人",
+        "url": "https://tools.chweb.dpdns.org/game/bombman/",
+        "desc": "",
+        "logo": "",
+        "private": false
+      }
+    ]
+  },
+  {
+    "category": "在线工具",
+    "sites": [
+      {
+        "name": "Latex在线编辑器",
+        "url": "https://latex.chweb.dpdns.org/",
+        "desc": "Latex在线编辑器，支持Markdown格式Latex混编",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "base64",
+        "url": "https://tools.chweb.dpdns.org/tool/base64/",
+        "desc": "base64 解码",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "常用软件下载",
+        "url": "https://tools.chweb.dpdns.org/tool/software/",
+        "desc": "常用软件下载页面",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "计算器",
+        "url": "https://tools.chweb.dpdns.org/tool/calculator/",
+        "desc": "一个简单的计算器实现",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "Mathematica在线激活",
+        "url": "https://tools.chweb.dpdns.org/tool/mathematica-keygen/",
+        "desc": "Mathematica在线激活",
+        "logo": "",
+        "private": false
+      },
+      {
+        "name": "在线生成Julia集图形",
+        "url": "https://tools.chweb.dpdns.org/tool/Julia/",
+        "desc": "可以生成精美的Julia集合图形，可以用来做壁纸",
+        "logo": "",
+        "private": false
+      }
+    ]
+  }
+]

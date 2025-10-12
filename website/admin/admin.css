@@ -1,0 +1,401 @@
+/* ==========================================================================
+   站点管理面板 - 完整最终版样式
+   ========================================================================== */
+
+/* --- 1. 全局与布局 --- */
+:root {
+    --primary-color: #2563eb;
+    --primary-hover-color: #1d4ed8;
+    --danger-color: #dc2626;
+    --success-color: #16a34a;
+    --bg-main: #f3f4f6;
+    --bg-panel: #ffffff;
+    --border-color: #e5e7eb;
+    --text-dark: #111827;
+    --text-light: #6b7280;
+    --white: #ffffff;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--bg-panel);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+    border: 1px solid var(--border-color);
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--text-dark);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 2rem 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* --- 2. 登录与表单 --- */
+.auth-section {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    max-width: 450px;
+    margin: 2rem auto;
+}
+
+input[type="password"] {
+    flex-grow: 1;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+input[type="password"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.status-msg {
+    margin: 0.5rem 0 0 0;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    min-height: 1.2em; /* 防止没文字时跳动 */
+}
+
+/* --- 3. 按钮 --- */
+button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+#login-btn, #add-category-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: 600;
+}
+#login-btn:hover, #add-category-btn:hover {
+    background-color: var(--primary-hover-color);
+}
+
+.action-btn {
+    background-color: var(--white);
+    color: var(--text-dark);
+    border-color: #d1d5db;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+.action-btn:hover {
+    background-color: var(--bg-main);
+}
+
+.save-btn {
+    background-color: var(--success-color);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+}
+.save-btn:hover {
+    opacity: 0.9;
+}
+
+.bottom-actions {
+    display: flex;
+    justify-content: flex-end; /* 仅将内容推到最右边 */
+    align-items: center;
+}
+
+.save-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* --- 4. 管理面板内部导航 --- */
+#admin-nav {
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 1.5rem;
+}
+
+#admin-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+#admin-nav-list a {
+    display: block;
+    padding: 0.75rem 1.25rem;
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 6px 6px 0 0;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: all 0.2s ease;
+}
+
+#admin-nav-list a:hover {
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+}
+
+#admin-nav-list a.active {
+    color: var(--primary-color);
+    font-weight: 600;
+    border-bottom-color: var(--primary-color);
+    background-color: var(--bg-main);
+}
+
+/* --- 5. 分类与站点列表 --- */
+.category-section {
+    display: none;
+}
+.category-section.active {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.category-title {
+    flex-grow: 1;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.category-actions, .site-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.sites-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.site-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--bg-main);
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.site-info {
+    flex-grow: 1;
+}
+
+.site-info p { margin: 0; }
+.site-name { font-weight: 500; }
+.site-url { font-size: 0.85rem; color: var(--text-light); margin-top: 0.25rem !important; }
+
+.private-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    background-color: #fffbeb;
+    color: #b45309;
+    padding: 2px 6px;
+    border-radius: 99px;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+.delete-category-btn:hover, .delete-site-btn:hover {
+    background-color: #fee2e2;
+    border-color: var(--danger-color);
+    color: var(--danger-color);
+}
+
+/* --- 6. 拖拽样式 --- */
+.drag-handle {
+    font-size: 1.5rem;
+    color: #9ca3af;
+    cursor: grab;
+    padding: 0 0.5rem;
+    transition: color 0.2s;
+}
+.drag-handle:hover { color: var(--text-dark); }
+.drag-handle:active { cursor: grabbing; }
+
+.sortable-ghost {
+    opacity: 0.5;
+    background: #e0e7ff;
+    border: 2px dashed var(--primary-color);
+}
+
+/* --- 7. [新增] 模态框样式 --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.hidden {
+    opacity: 0;
+    pointer-events: none; /* 隐藏时不可交互 */
+}
+
+.modal-content {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+.modal-overlay.hidden .modal-content {
+    transform: scale(0.95);
+}
+
+.modal-content h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="url"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="url"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.form-group-checkbox label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-top: 2rem;
+}
+
+/* [新增] Logo输入与预览的包裹容器 */
+.logo-input-wrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+.logo-input-wrapper textarea {
+    flex-grow: 1; /* 让文本域占据更多空间 */
+}
+
+/* [新增] Logo预览容器样式 */
+.logo-preview-container {
+    width: 80px;
+    height: 80px;
+    background-color: var(--bg-main);
+    border: 1px dashed var(--border-color);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    flex-shrink: 0; /* 防止被压缩 */
+}
+
+#logo-preview {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}

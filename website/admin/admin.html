@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>站点管理面板</title>
+    <link rel="stylesheet" href="admin/admin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-header">
+            <h1>站点管理面板</h1>
+            <button id="add-category-btn" class="action-btn">＋ 添加新分类</button>
+        </div>
+        <div id="login-section" class="auth-section">
+            <input type="password" id="password" placeholder="输入你的管理密码">
+            <button id="login-btn">登录</button>
+            <p id="login-status" class="status-msg"></p>
+        </div>
+
+        <div id="editor" class="hidden">
+            
+            <nav id="admin-nav">
+                <ul id="admin-nav-list">
+                    </ul>
+            </nav>
+            
+            <div id="categories-list">
+                </div>
+            
+            <hr>
+
+            <div class="bottom-actions">
+                <div class="save-container">
+                    <button id="save-btn" class="save-btn">全部保存</button>
+                    <p id="save-status" class="status-msg"></p>
+                </div>
+            </div>
+            </div>
+    </div>
+    <div id="site-modal-overlay" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h3 id="modal-title">添加新站点</h3>
+            <form id="site-form">
+                <div class="form-group">
+                    <label for="site-name">名称</label>
+                    <input type="text" id="site-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="site-url">URL链接</label>
+                    <input type="url" id="site-url" required>
+                </div>
+                <div class="form-group">
+                    <label for="site-desc">网站说明</label>
+                    <textarea id="site-desc" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="site-logo-input">Logo (URL、路径或SVG代码)</label>
+                    <div class="logo-input-wrapper">
+                        <textarea id="site-logo-input" rows="5" placeholder="可粘贴URL, 或 logos/xxx.png, 或 <svg>...</svg>"></textarea>
+                        <div class="logo-preview-container">
+                            <img id="logo-preview" src="" alt="Logo 预览">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group form-group-checkbox">
+                    <input type="checkbox" id="site-private">
+                    <label for="site-private">这是一个私有站点</label>
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="modal-cancel-btn" class="action-btn">取消</button>
+                    <button type="submit" id="modal-save-btn" class="save-btn">保存</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="admin/Sortable.min.js"></script>
+    <script src="admin/admin.js"></script>
+</body>
+</html>

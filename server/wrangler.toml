@@ -1,0 +1,15 @@
+name = "ch-navicate"
+main = "src/index.ts"
+compatibility_date = "2025-07-25"
+
+
+# [重要] 绑定你的 R2 存储桶
+[[r2_buckets]]
+binding = "SITE_BUCKET" # 在代码中将用这个名字访问R2
+bucket_name = "my-cool-nav" # 你在Cloudflare上创建的R2存储桶的实际名称
+
+# [重要] 定义一个变量来存放你的管理后台密码 (API Key)
+[vars]
+# 请不要把真实密码写在这里，我们稍后会用 wrangler secret 来设置
+# 这里只是为了本地开发
+ADMIN_API_KEY = "123456"
