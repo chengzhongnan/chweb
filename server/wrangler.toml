@@ -1,4 +1,4 @@
-name = "ch-navicate"
+name = "ch-mainpage"
 main = "src/index.ts"
 compatibility_date = "2025-07-25"
 
@@ -12,4 +12,5 @@ bucket_name = "my-cool-nav" # 你在Cloudflare上创建的R2存储桶的实际�
 [vars]
 # 请不要把真实密码写在这里，我们稍后会用 wrangler secret 来设置
 # 这里只是为了本地开发
-ADMIN_API_KEY = "123456"
+ADMIN_API_KEY = "cheng1986"
+SITE_JSON = "data/sites.json"

@@ -7,6 +7,7 @@ type Env = {
 	Bindings: {
 		SITE_BUCKET: R2Bucket;
 		ADMIN_API_KEY: string;
+		SITE_JSON: string;
 	}
 }
 
@@ -39,7 +40,7 @@ const authMiddleware = async (c, next) => {
 
 // --- 2. 公共 API：获取站点数据 ---
 app.get('/api/sites', async (c) => {
-	const object = await c.env.SITE_BUCKET.get('data/sites.json');
+	const object = await c.env.SITE_BUCKET.get(c.env.SITE_JSON);
 	if (object === null) {
 		return c.json({ error: 'Data file not found' }, 404);
 	}
@@ -69,7 +70,7 @@ app.get('/api/sites', async (c) => {
 app.post('/admin/sites', authMiddleware, async (c) => {
 	try {
 		const newSitesData = await c.req.json();
-		await c.env.SITE_BUCKET.put('data/sites.json', JSON.stringify(newSitesData, null, 2));
+		await c.env.SITE_BUCKET.put(c.env.SITE_JSON, JSON.stringify(newSitesData, null, 2));
 		return c.json({ success: true, message: 'Data updated successfully.' });
 	} catch (error: any) {
 		return c.json({ error: 'Failed to update data', details: error.message }, 500);

@@ -1,0 +1,9 @@
+D:\Projects\JS\chweb\website\index.html
+D:\Projects\JS\chweb\website\script.js
+D:\Projects\JS\chweb\website\style.css
+D:\Projects\JS\chweb\website\admin\admin.css
+D:\Projects\JS\chweb\website\admin\admin.html
+D:\Projects\JS\chweb\website\admin\admin.js
+D:\Projects\JS\chweb\website\admin\Sortable.min.js
+D:\Projects\JS\chweb\website\data\data_sites.json
+D:\Projects\JS\chweb\website\logos\default.svg
