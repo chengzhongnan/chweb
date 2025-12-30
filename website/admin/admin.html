@@ -10,13 +10,23 @@
     <div class="container">
         <div class="main-header">
             <h1>站点管理面板</h1>
-            <button id="add-category-btn" class="action-btn">＋ 添加新分类</button>
+            <div class="header-actions">
+				<button id="main-btn" class="action-btn" onclick="window.location.href='/'">回首页</button>
+                <button id="import-btn" class="action-btn">导入配置</button>
+                <button id="export-btn" class="action-btn">导出配置</button>
+                <button id="add-category-btn" class="action-btn">＋ 添加新分类</button>
+            </div>
         </div>
+        
+        <input type="file" id="import-file-input" class="hidden" accept=".json, .js">
+
+
         <div id="login-section" class="auth-section">
             <input type="password" id="password" placeholder="输入你的管理密码">
             <button id="login-btn">登录</button>
             <p id="login-status" class="status-msg"></p>
         </div>
+
 
         <div id="editor" class="hidden">
             
@@ -29,6 +39,7 @@
                 </div>
             
             <hr>
+
 
             <div class="bottom-actions">
                 <div class="save-container">
@@ -76,7 +87,7 @@
             </form>
         </div>
     </div>
-    <script src="admin/Sortable.min.js"></script>
-    <script src="admin/admin.js"></script>
+    <script src="admin/Sortable.min.js" nonce="MzI1MzcwNzA0MywyNDYyMDY2MjMy"></script>
+    <script src="admin/admin.js" nonce="MzI1MzcwNzA0MywyNDYyMDY2MjMy"></script>
 </body>
 </html>
