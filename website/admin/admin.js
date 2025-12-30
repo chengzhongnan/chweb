@@ -10,6 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const addCategoryBtn = document.getElementById('add-category-btn');
     const saveBtn = document.getElementById('save-btn');
     const saveStatus = document.getElementById('save-status');
+    
+    // [新增] 导入/导出相关元素
+    const importBtn = document.getElementById('import-btn');
+    const exportBtn = document.getElementById('export-btn');
+    const importFileInput = document.getElementById('import-file-input');
 
     // [新增] 模态框相关元素
     const modalOverlay = document.getElementById('site-modal-overlay');
@@ -233,6 +238,13 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         saveBtn.onclick = handleSave;
+        
+        // [新增] 导入/导出事件监听
+        exportBtn.onclick = handleExport;
+        importBtn.onclick = () => importFileInput.click(); // 点击导入按钮时，触发隐藏的文件输入框
+        importFileInput.onchange = handleImport;
+
+
         categoriesList.addEventListener('click', e => {
             const target = e.target;
             const categorySection = target.closest('.category-section');
@@ -338,6 +350,101 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
+
+    // =======================================================================
+    // [新增] 导入/导出处理函数
+    // =======================================================================
+
+    /**
+     * 处理导出配置的函数
+     */
+    function handleExport() {
+        const data = buildDataFromDOM();
+        const jsonString = JSON.stringify(data, null, 2); // 格式化JSON，方便阅读
+        const blob = new Blob([jsonString], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'sites-config.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url); // 释放内存
+    }
+    
+    /**
+     * [修改] 校验导入的JSON数据结构是否有效
+     * @param {any} data - 从JSON文件解析出的数据
+     * @returns {boolean} - 如果数据有效则返回true，否则返回false
+     */
+    function isImportDataValid(data) {
+        // 1. 必须是数组
+        if (!Array.isArray(data)) {
+            return false;
+        }
+
+        // 2. 检查数组中的每个分类对象
+        return data.every(category => {
+            const hasCategoryString = typeof category.category === 'string' && category.category.trim() !== '';
+            const hasSitesArray = Array.isArray(category.sites);
+            
+            if (!hasCategoryString || !hasSitesArray) {
+                return false;
+            }
+
+            // 3. (可选) 深入检查每个站点对象
+            return category.sites.every(site => {
+                const hasName = typeof site.name === 'string' && site.name.trim() !== '';
+                const hasUrl = typeof site.url === 'string' && site.url.trim() !== '';
+                return hasName && hasUrl; // 至少需要name和url
+            });
+        });
+    }
+
+
+    /**
+     * [修改] 处理导入配置的函数
+     * @param {Event} event - 文件输入框的change事件对象
+     */
+    function handleImport(event) {
+        const file = event.target.files[0];
+        if (!file) {
+            return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            try {
+                const data = JSON.parse(e.target.result);
+
+                // [新增] 校验JSON文件内容
+                if (!isImportDataValid(data)) {
+                    alert('JSON文件结构不正确。请确保文件包含一个分类数组，每个分类有 "category" 和 "sites" 属性。');
+                    return;
+                }
+
+                if (confirm('导入配置将覆盖当前所有内容并立即保存，确定要继续吗？')) {
+                    // 1. 使用新数据重新渲染UI
+                    renderUI(data);
+                    // 2. 立即调用保存函数，将新数据发送到服务器
+                    handleSave();
+                }
+            } catch (error) {
+                alert('文件格式错误，请确保是正确的JSON配置文件。');
+                console.error("JSON parsing error:", error);
+            }
+        };
+        reader.onerror = () => {
+            alert('读取文件时发生错误。');
+        };
+
+        reader.readAsText(file);
+
+        // 重置input的值，这样即使用户连续选择同一个文件也能触发change事件
+        event.target.value = null;
+    }
+
 
     // =======================================================================
     // [核心修改] 模态框驱动的站点操作
